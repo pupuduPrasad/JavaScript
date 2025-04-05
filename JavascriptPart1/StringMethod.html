@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StringMethod</title>
+</head>
+<body>
+<script>
+  let str1 = "Hello World"
+  console.log(str1.charAt(0));
+  console.log(str1.charAt(1));
+  console.log(str1.charAt(2));
+  console.log(str1.charAt(3));
+  console.log(str1.charAt(4));
+  console.log(str1.charAt(5));
+  console.log(str1.charAt(6));
+  console.log(str1.charAt(7));
+  console.log(str1.charAt(8));
+  console.log(str1.charCodeAt(9));
+
+  // concat string values
+  let strvalue1 = "IJSE";
+  let strvalue2 = "Students";
+  let strvalue = strvalue1 + strvalue2; /*merge*/
+  console.log(strvalue); // IJSEStudents
+  strvalue = strvalue1.concat(strvalue2);
+  console.log(strvalue); // IJSEStudents
+  strvalue = strvalue2.concat(strvalue1);
+  console.log(strvalue); // StudentsIJSE
+
+  let mystr = "www.ijse.lk";
+  // check that the given string starts with given string value
+  console.log(mystr.startsWith("www")); // true
+  console.log(mystr.startsWith("https")); // false
+  // check that the given string ends with given string value
+  console.log(mystr.endsWith("lk")); // true
+  console.log(mystr.endsWith("k")); // true
+  console.log(mystr.endsWith("com")); // false
+  console.log(mystr.endsWith("somapala")); // false
+
+  let newStr1 = "Hello";
+  let newStr2 = "Hello";
+  let newStr3 = "ballo";
+
+  console.log(newStr1.localeCompare(newStr2));
+  console.log(newStr1.localeCompare(newStr3));
+
+  mystr = "A,B,C,D,E,F";
+  // replace given part of a string
+  console.log(mystr.replace(",","/")); // 'A/B,C,D,E,F'
+  console.log(mystr.replaceAll(",","/")); // 'A/B/C/D/E/F'
+
+
+  mystr = "hello, world";
+  // searching value parts
+  console.log(mystr.search("world")); // 7, yes! it has
+  console.log(mystr.search("worldx")); // -1, No!, it doesn't
+
+  str = "hello, world!";
+  // slice a special part of a string
+  console.log(str.slice(7, 12)); // 'world'
+
+  str = "apple,mango,pineapple";
+  // split string by given value
+  console.log(str.split("")); // ['a', 'p', 'p', 'l', 'e', ',', 'm', 'a', 'n', 'g', 'o', ',', 'p', 'i', 'n', 'e', 'a', 'p', 'p', 'l', 'e']
+  console.log(str.split(",")); // ['apple', 'mango', 'pineapple']
+
+  let s1 = "hello";
+  let s2 = "hello";
+  let s3 = "Hello";
+  let s4 = "HI";
+  console.log(s1.localeCompare(s2));
+  console.log(s1.localeCompare(s3));
+  console.log(s3.localeCompare(s4));
+  console.log(s4.localeCompare(s3));
+
+
+</script>
+</body>
+</html>
